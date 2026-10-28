@@ -1,0 +1,99 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+}
+.Amazon {
+    color: white;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: #1e3a5f;
+}
+
+.subtitle {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #1e3a5f;
+    font-size: 20px;
+}
+
+.card p {
+    color: #555555;
+    line-height: 1.5;
+}
+
+.card h3 {
+    color: green;
+    font-size: 22px;
+}
+
+.card button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.card button:hover {
+    background-color: #154f9c;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
